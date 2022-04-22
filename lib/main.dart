@@ -19,6 +19,8 @@ class MyApp extends StatelessWidget {
         ),
         body: SafeArea(
           child: Column(
+            //making all the content of this column to be centralized
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               //adding image using circleAvatar
               CircleAvatar(
