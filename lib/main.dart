@@ -50,6 +50,11 @@ class MyApp extends StatelessWidget {
               //adding a divider to get a thin line
               SizedBox(
                 height: 20.0,
+
+                // resizing the width of the line
+                width: 150.0,
+
+                //customizing divider props
                 child: Divider(
                   color: Colors.pink[100],
                 ),
