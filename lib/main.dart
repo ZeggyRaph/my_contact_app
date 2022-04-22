@@ -46,6 +46,15 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
+
+              //adding a divider to get a thin line
+              SizedBox(
+                height: 20.0,
+                child: Divider(
+                  color: Colors.pink[100],
+                ),
+              ),
+
               // using a card widget instead of a container widget
               Card(
                 // padding: EdgeInsets.all(10.0), This is not recognised in card
