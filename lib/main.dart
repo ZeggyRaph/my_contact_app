@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: [
+              //adding image using circleAvatar
               CircleAvatar(
                 radius: 50.0,
                 backgroundImage: AssetImage('images/raph.jpg'),
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Text(
-                'FLUTTER DEVELLOPER',
+                'FLUTTER DEVELOPER',
                 style: TextStyle(
                   fontFamily: 'Source Sans Pro',
                   fontSize: 15.0,
@@ -50,28 +51,23 @@ class MyApp extends StatelessWidget {
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
 
                 // This is how a padding class is included into a card class
-                child: Padding(
-                  padding: EdgeInsets.all(25.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.phone,
+                // child: Padding(
+                //padding: EdgeInsets.all(25.0),
+
+                //using ListTile instead of row for a card widget
+                child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.pink[900],
+                    ),
+                    title: Text(
+                      '+23470 3161 2572',
+                      style: TextStyle(
                         color: Colors.pink[900],
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 15.0,
                       ),
-                      SizedBox(
-                        width: 30.0,
-                      ),
-                      Text(
-                        '+23470 3161 2572',
-                        style: TextStyle(
-                          color: Colors.pink[900],
-                          fontFamily: 'Source Sans Pro',
-                          fontSize: 15.0,
-                        ),
-                      )
-                    ],
-                  ),
-                ),
+                    )),
               ),
 
               // using a card widget instead of a container widget
@@ -79,7 +75,8 @@ class MyApp extends StatelessWidget {
                 //padding: EdgeInsets.all(10.0),
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                //using ListTitle instead of row
+
+                //using ListTile instead of row
                 child: ListTile(
                   leading: Icon(
                     Icons.email,
